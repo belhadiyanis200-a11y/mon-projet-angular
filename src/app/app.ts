@@ -1,16 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { Accueil } from './accueil/accueil';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [Accueil],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('mon-projet-angular');
-
-  afficherMessage() {
-    alert('Bienvenue dans mon application Angular !');
-  }
 }
