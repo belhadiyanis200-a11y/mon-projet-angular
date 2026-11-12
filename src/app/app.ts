@@ -9,4 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('mon-projet-angular');
+
+  afficherMessage() {
+    alert('Bienvenue dans mon application Angular !');
+  }
 }
