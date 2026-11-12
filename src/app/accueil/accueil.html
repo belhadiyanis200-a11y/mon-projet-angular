@@ -6,3 +6,10 @@
 @if (connecte) {
   <div>Connecté</div>
 }
+<h2>Liste des utilisateurs</h2>
+
+<ul>
+  @for (nom of noms; track nom) {
+    <li>{{ nom }}</li>
+  }
+</ul>

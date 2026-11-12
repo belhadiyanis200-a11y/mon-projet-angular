@@ -10,6 +10,7 @@ export class Accueil {
   titre = 'Bienvenue INF1083';
   nom = 'Prof';
   connecte = true;
+  noms = ['Alice', 'Bob', 'Charlie'];
 
   saluer() {
     alert('Bonjour !');
